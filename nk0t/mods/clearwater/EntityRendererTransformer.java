@@ -84,7 +84,7 @@ public class EntityRendererTransformer implements IClassTransformer, Opcodes
 
         InsnList insnList = new InsnList();
         insnList.add(new IntInsnNode(Opcodes.SIPUSH, GL11.GL_FOG_DENSITY));
-        insnList.add(new LdcInsnNode(0F));
+        insnList.add(new LdcInsnNode(0.01F));
         insnList.add(new MethodInsnNode(INVOKESTATIC, "org/lwjgl/opengl/GL11", "glFogf", "(IF)V"));
         return insnList;
     }
