@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+FMLCorePlugin: nk0t.mods.clearwater.ClearWater
